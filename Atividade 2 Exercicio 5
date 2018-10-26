@@ -1,0 +1,7 @@
+#!usr/bin/env python
+#-*- coding: latin1 -*-
+#encoding: utf-8
+#Digitar uma frase e mostrar a frase invertida
+
+FRASE = str(raw_input('Digite uma frase qualquer: '))
+print ('Assim fica a frase invertida:'+ ('{}').format(FRASE)[::-1])
