@@ -1,0 +1,15 @@
+#!usr/bin/env python
+#-*- coding: latin1 -*-
+#Verificar se os valores formam um quadrado e informar a area do quadrado
+#encoding: utf-8
+
+
+VALORA = int(input('Digite um valor para A: '))
+VALORB = int(input('Digite um valor para B: '))
+VALORC = int(input('Digite um valor para C: '))
+
+if (VALORA > (VALORB + VALORC)):
+    print ('Nao é um quadrado')
+else:
+    AREA = (VALORA + VALORB + VALORC) / 2
+    print ('Forma um quadrado de area igual a ',AREA)
