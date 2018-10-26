@@ -1,0 +1,11 @@
+#!usr/bin/env python
+#-*- coding: latin1 -*-
+#digitar a idade em dias e converter para anos meses e dias
+
+print ('Converter a idade de dias para anos meses e dias')
+
+idadeemdias = int(input('Digite sua idade em dias: '))
+anos = int(idadeemdias / 365)
+meses = int((idadeemdias % 365) / 30)
+dias = int((idadeemdias % 365) % 30)
+print (anos, 'anos,', meses,'meses e ', dias,'dias de idade')
