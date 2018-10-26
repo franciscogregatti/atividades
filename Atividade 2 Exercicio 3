@@ -1,0 +1,16 @@
+#!usr/bin/env python
+#-*- coding: latin1 -*-
+#Digitar tres numeros e mostrar qual foi o menor
+
+VALORA = int(input('Digite um valor para A: '))
+VALORB = int(input('Digite um valor para B: '))
+VALORC = int(input('Digite um valor para C: '))
+
+if ((VALORA==VALORB) or (VALORA==VALORC) or  (VALORB==VALORC)):
+        print ('Valores iguais')
+if((VALORA < VALORB) and (VALORA < VALORC)):
+    print ('O menor e o VALOR A ',VALORA)
+if ((VALORB < VALORA) and (VALORB < VALORC)):
+    print ('O menor e o VALOR B ',VALORB)
+if ((VALORC < VALORA) and (VALORC < VALORB)):
+    print ('O menor e o VALOR C ',VALORC)
