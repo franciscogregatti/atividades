@@ -1,0 +1,77 @@
+#APRESENTAR NOME, ENDEREÇO E CALCULAR O IMC
+from tkinter import*
+
+janela = Tk()
+
+def imc():
+    
+    
+    
+    altura = float(alturaa.get())
+    peso = float(pesoo.get())
+    indicemassacorporal["text"] = (peso / (altura * altura))
+    nome["text"] = nomee.get()
+    endereço["text"] = endereçoo.get()
+    linhaindicemassacorporal = Label(janela, text="O indice de massa corporal é: ")
+    linhaindicemassacorporal.place(x=25 , y=270)
+    
+
+
+nomee = Entry(janela)
+nomee.place(x=141 , y=25)
+
+linha = Label(janela, text="Nome: ")
+linha.place(x=20 , y=25)
+
+nome = Label(janela)
+nome.place(x=25 , y=230)
+
+
+
+
+endereçoo = Entry(janela)
+endereçoo.place(x=360 , y=25)
+
+linha = Label(janela, text="Endereço: ")
+linha.place(x=250 , y=25)
+
+endereço = Label(janela)
+endereço.place(x=25 , y=250)
+
+
+
+alturaa = Entry(janela)
+alturaa.place(x=140 , y=55)
+
+linha = Label(janela, text="Altura(centimentros): ")
+linha.place(x=20 , y=55)
+
+
+
+pesoo = Entry(janela)
+pesoo.place(x=360 , y=55)
+
+linha2 = Label(janela, text="Peso em quilos: ")
+linha2.place(x=250 , y=55)
+
+
+calcular = Button(janela, text="CALCULAR IMC", command=imc, fg = 'black')
+calcular.place(x=250 , y=150)
+
+botaoexit = Button(janela, text="SAIR", command=janela.destroy, fg = 'black')
+botaoexit.place(x=270 , y=300)
+
+resultadotudo = Label(janela, text="RESULTADO: NOME, ENDEREÇO E IMC", fg = 'black')
+resultadotudo.place(x=20 , y=190)
+
+
+
+indicemassacorporal = Label(janela)
+indicemassacorporal.place(x=200 , y=270)
+
+
+
+janela.geometry("600x400+550+200")
+janela.title("Calcular indice de massa corporal (IMC)")
+
+janela.mainloop()
